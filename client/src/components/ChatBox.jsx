@@ -6,16 +6,12 @@ export default function ChatBoxReceiver({avatar, user, message}) {
         <div className="chatBoxReceiver">
             <Avatar
                 size={50}
-                src={<Image
-                    src={avatar}
-                    preview={false}
-                />}
+                src={<Image src={avatar} preview={false}/>}
             />
             <p>
                 <strong> {user} </strong> <br></br>
                 {message}
             </p>
-
         </div>
     );
 }
@@ -28,13 +24,9 @@ export function ChatBoxSender({avatar, user, message}) {
                 {message}
             </p>
             <Avatar
-                size={50}
-                src={<Image
-                    src={avatar}
-                    preview={false}
-                />}
+                size={50} 
+                src={<Image src={avatar} preview={false}/>}
             />
-
         </div>
     );
 }
